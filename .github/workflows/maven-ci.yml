@@ -9,7 +9,7 @@ jobs:
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'amazoncorretto'
+          distribution: 'temurin'
           java-version: '21'
       - name: Compile Project
         run: mvn clean compile
