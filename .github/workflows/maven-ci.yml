@@ -22,3 +22,7 @@ jobs:
         with:
           name: build-artifact
           path: target/*
+      - name: Compile java program
+        run: javac src/main/java/App.java
+      - name: Run java Program
+        run: java -cp src/main/java App
