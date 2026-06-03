@@ -18,7 +18,7 @@ jobs:
       - name: Package Application
         run: mvn package
       - name: Archive Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: target/*.jar
+          path: target/*
